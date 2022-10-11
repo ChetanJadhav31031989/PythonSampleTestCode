@@ -10,9 +10,9 @@ pipeline {
 
         stage('build') {
             steps {
-                sh "set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\;"
-                sh 'set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;'
-                sh 'python --version'
+                bat "set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\;"
+                bat 'set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;'
+                bat 'python --version'
             }
         }
 
