@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh "set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\;"
                 sh 'set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;'
-                sh 'python --version'
+                sh 'git --version'
             }
         }
 
