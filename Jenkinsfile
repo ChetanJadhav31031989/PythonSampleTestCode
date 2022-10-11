@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') { // Checkout (git clone ...) the projects repository
         steps {
         checkout scm
-        }
+        }}
 
         stage('build') {
             steps {
