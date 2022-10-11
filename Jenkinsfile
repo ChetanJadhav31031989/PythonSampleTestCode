@@ -1,6 +1,7 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
     agent any
+
     stages {
 
         stage('Checkout') { // Checkout (git clone ...) the projects repository
@@ -10,14 +11,11 @@ pipeline {
 
         stage('build') {
             steps {
+                sh "set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\;"
+                sh 'set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;'
                 sh 'python --version'
             }
         }
 
-        stage('script') {
-            steps {
-                sh 'python Sample_Codes.py'
-            }
-        }
     }
 }
