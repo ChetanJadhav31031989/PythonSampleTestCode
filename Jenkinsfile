@@ -2,6 +2,12 @@
 pipeline {
     agent any
     stages {
+
+        stage('Checkout') { // Checkout (git clone ...) the projects repository
+        steps {
+        checkout scm
+        }
+
         stage('build') {
             steps {
                 sh 'python --version'
