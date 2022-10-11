@@ -13,6 +13,7 @@ pipeline {
                 bat "set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\;"
                 bat 'set PATH=C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;'
                 bat 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\python.exe --version'
+                bat 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\python.exe Sample_Codes.py'
             }
         }
 
